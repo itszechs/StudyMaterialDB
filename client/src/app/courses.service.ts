@@ -7,7 +7,7 @@ import { Course } from './course';
   providedIn: 'root'
 })
 export class CourseService {
-  private url = 'http://192.168.68.19:5500';
+  private url = 'http://127.0.0.1:5500';
   private course$: Subject<Course[]> = new Subject();
 
   constructor(private httpClient: HttpClient) {
